@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ольга Гаврилова](https://up.htmlacademy.ru/adaptive/18/user/1148863).
-* Наставник: `Неизвестно`.
+- Студент: [Максим Лапенков](https://up.htmlacademy.ru/adaptive/18/user/1148863).
+- Наставник: `Сам я`.
 
 ---
 
