@@ -4,44 +4,64 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--open">
     <h1 class="visually-hidden">Приложение PINK</h1>
-    <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="22"
-          viewBox="0 0 75 22">
-          <image id="logotype-white-mobile.svg" width="75" height="22"
-            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAYAAACIXmHDAAACr0lEQVRYhdVZi3HbMAwFeh3AG9TdIJmg8QSNJ6g9Qe0J0kygdAKrE8QbOBvInSDqBPEGrwcbdCFaoiSKytXvLnfWhyDxCDwCEQHYoRsKAM8AFgAmFIA8B/CmVu+b3lSbglcA05DNhvFTM89d7DsB+zcVPzoS5eOthYQ7M+BH4D2Lom0TYuaR+13WUjPOEnUc+9E8L4noV8PYT0R0o38CcUqibMnMeR8HAxDbGREtE9mLhhBFRDv1U7AnoqcKWcwcZF5TRRxyUbUBIONeEq1TUvxP2zrGRANRM2Y+fOgzLzMLMXMistH0PcHaS/P7IZTiY6KGqK0jSi56kWWwNr9TOFZ66bfRhb8baojKJTAcURRLlho4p15fYW6wmZuIdZo42G4XNBB1oZ2xkTUKdIFuE6bqwKjoStRQss5pYkM1AeZGw+T43oxFlmpjJ6IoliwAKzNBqpPwCCVeCHMbICfkIuUcdPJBbD4bPx5DRFEMWUpUZm499l5pC5h5XyP4varvEJQoP2K/tmmkrbMmLQuSZ99USxzyhDVWBcy8BSAb8aD3RfBvpXwZYreGqFJ9ctp1Gxoci1Ab07fdaRRy0aymliii3SlQxaKmrWnUyL5pWOrx/vkdq+y1VtGkuz9E8N2hJHooUZprys/NOwuVmgvYNNx7xaaPcmgKxEAEH8CMiF5VjO8BZMwcWmsIB63K3QbIHC/S55qNyAAc/L7XknUYS3+GwhBWqKkVgN9em9QFF0Q5CDEAvkhk6S0hbG/f/a+K0hBqTsjM1nod8bOOKActHbZ6KVG8s/9nuxqy6F9L9KSXE6+ESYWl0chK23VVZNGJsHXqQtiz7xfF50Pl6shSzM3uJ4ceZDNj93ioXCVZuvtLs/tjzOFr5Mp+NEhWN0V8sIiaW2yP+cFCx5+KWqD4Cwkc6Iy9EZq9AAAAAElFTkSuQmCC" />
-        </svg>
+    <div class="container container--top">
+      <div class="page-header__wrapper">
+        <div class="logo-wrapper">
+          <a href="#" class="page-header__logo">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75"
+              height="22" viewBox="0 0 75 22">
+              <image id="logotype-white-mobile.svg" width="75" height="22"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAYAAACIXmHDAAACr0lEQVRYhdVZi3HbMAwFeh3AG9TdIJmg8QSNJ6g9Qe0J0kygdAKrE8QbOBvInSDqBPEGrwcbdCFaoiSKytXvLnfWhyDxCDwCEQHYoRsKAM8AFgAmFIA8B/CmVu+b3lSbglcA05DNhvFTM89d7DsB+zcVPzoS5eOthYQ7M+BH4D2Lom0TYuaR+13WUjPOEnUc+9E8L4noV8PYT0R0o38CcUqibMnMeR8HAxDbGREtE9mLhhBFRDv1U7AnoqcKWcwcZF5TRRxyUbUBIONeEq1TUvxP2zrGRANRM2Y+fOgzLzMLMXMistH0PcHaS/P7IZTiY6KGqK0jSi56kWWwNr9TOFZ66bfRhb8baojKJTAcURRLlho4p15fYW6wmZuIdZo42G4XNBB1oZ2xkTUKdIFuE6bqwKjoStRQss5pYkM1AeZGw+T43oxFlmpjJ6IoliwAKzNBqpPwCCVeCHMbICfkIuUcdPJBbD4bPx5DRFEMWUpUZm499l5pC5h5XyP4varvEJQoP2K/tmmkrbMmLQuSZ99USxzyhDVWBcy8BSAb8aD3RfBvpXwZYreGqFJ9ctp1Gxoci1Ab07fdaRRy0aymliii3SlQxaKmrWnUyL5pWOrx/vkdq+y1VtGkuz9E8N2hJHooUZprys/NOwuVmgvYNNx7xaaPcmgKxEAEH8CMiF5VjO8BZMwcWmsIB63K3QbIHC/S55qNyAAc/L7XknUYS3+GwhBWqKkVgN9em9QFF0Q5CDEAvkhk6S0hbG/f/a+K0hBqTsjM1nod8bOOKActHbZ6KVG8s/9nuxqy6F9L9KSXE6+ESYWl0chK23VVZNGJsHXqQtiz7xfF50Pl6shSzM3uJ4ceZDNj93ioXCVZuvtLs/tjzOFr5Mp+NEhWN0V8sIiaW2yP+cFCx5+KWqD4Cwkc6Iy9EZq9AAAAAElFTkSuQmCC" />
+            </svg>
+            <svg class="tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="147" height="40" viewBox="0 0 147 40">
+              <image id="logotype-white-tablet.svg" width="147" height="40"
+                xlink:href="data:img/png;base64,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" />
+            </svg>
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="147" height="40" viewBox="0 0 147 40">
+              <image id="logotype-white-desktop.svg" width="147" height="40"
+                xlink:href="data:img/png;base64,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" />
+            </svg>
 
 
-      </a>
-      <button class="toggle"></button>
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a href="#">Главная11</a></li>
-            <li class="site-list__item"><a href="#">Фотографии1122</a></li>
-            <li class="site-list__item"><a href="#">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">Html Academy</a></li>
-          </ul>
+          </a>
+          <button class="toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="24"
+              viewBox="0 0 50 24">
+              <image id="menu-burger.svg" width="50" height="24"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAYCAYAAAC4CK7hAAAAXElEQVRYhe3WwQ2AAAgDwOIEjuTobiQb1OAEakwspPfg3b5KkDwArOgtqwibl7gsAhk+UUVyQI+MuiS3/7O8FxF71+xm9pCXXY2XXcyEDmZ2x5g33suuxssuBcgTTc4obdrzPnYAAAAASUVORK5CYII=" />
+            </svg>
+
+          </button>
         </div>
-      </nav>
-    </div>
-  </header>
 
-  <main class="page-main">
-    <section class="info">
-      <h2 class="visually-hidden">Информация о приложении</h2>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+              <li class="site-list__item"><a href="#">Фотографии</a></li>
+              <li class="site-list__item"><a href="#">Конкурс</a></li>
+              <li class="site-list__item"><a href="#">Html Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+    <div class="container container--info">
       <div class="info__wrapper">
         <div class="info__title">
-
+          <h2>Взгляните <br> на жизнь <br> иначе!</h2>
         </div>
         <div class="info__download">
           <button class="button">Скачать приложение</button>
@@ -65,6 +85,13 @@
           <p class="info__download--description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="info">
+      <h2 class="visually-hidden">Информация о приложении</h2>
+
     </section>
     <section class="advantages">
 

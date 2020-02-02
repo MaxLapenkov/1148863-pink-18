@@ -1,11 +1,27 @@
 @import "normalize.scss";
-body {
-  background-color: black;
-  color: green;
+
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "blocks/header.scss";
+
+
+.container{
+  width: auto;
+  padding: 0 20px;
+  position: relative;
 }
-.example {
-    display: grid;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, white, black);
+@media (min-width: 660px){
+  .container{
+    width: auto;
+
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    width: 940px;
+    padding: 0 130px;
+  }
+}
+.none{
+  display: none;
 }
