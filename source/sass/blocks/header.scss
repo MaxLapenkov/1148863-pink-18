@@ -1,5 +1,6 @@
 .page-header{
   position: relative;
+  background-color: $main-color;
   background: url(../img/hand.png) no-repeat  0 30%,
  url(../img/back-mobile@1x.jpg) no-repeat 0 0 ;
 
@@ -8,19 +9,16 @@ background-size: 100%, 100% ;
 
 
 }
-.container--top{
-  position: relative;
 
-  &::after{
-    content: "";
-
-    position: absolute;
-    width: 100vw;
-    height: 65px;
-    top: 0;
-    left: 0;
-    background-color: $darker-color-header;
-  }
+.addition{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70px;
+  background-color: $darker-color-header;
+}
+.darkerbg{
+  background-color: $main-color;
 }
 .page-header__wrapper{
   display: flex;
@@ -28,6 +26,15 @@ background-size: 100%, 100% ;
   position: relative;
 
 
+}
+.page-header__logo{
+  &:hover{
+  svg{
+    path{
+      fill: $pink-color;
+    }
+  }
+}
 }
 .logo-wrapper{
   display: flex;
@@ -48,7 +55,14 @@ background-size: 100%, 100% ;
   border: none;
   padding: 0;
   margin: 0;
-
+  outline: none;
+  &:hover{
+    svg{
+      path{
+        fill: $pink-color;
+      }
+    }
+  }
 }
 .main-nav{
   z-index: 10;
@@ -65,7 +79,14 @@ background-size: 100%, 100% ;
   }
 }
 .site-list{
-
+  a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover{
+      color: $pink-color;
+    }
+    }
   &__item{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -73,9 +94,8 @@ background-size: 100%, 100% ;
     list-style-type: none;
     border-bottom: 1px solid black;
     border-top: 1px solid #485461;
-    a{
-    color: white;
-    }
+
+
   }
 }
 .tablet,
@@ -83,7 +103,7 @@ background-size: 100%, 100% ;
   display: none;
 }
 .container--info{
-  margin-top: 462px;
+  margin-top: 350px;
   background-color: $darker-color;
 }
 .info__download{
@@ -104,20 +124,29 @@ background-size: 100%, 100% ;
   }
 }
 .button{
-
+cursor: pointer;
   border: 4px solid white;
-  background-color: inherit;
+  background-color: transparent;
   color: white;
   box-sizing: border-box;
   padding: 20px 0;
   border-radius: 30px;
+  font-weight: bold;
+  &:hover{
+    background-color: white;
+    color: $pink-color;
+  }
 }
 .info__title{
+  display: none;
+}
+.none{
   display: none;
 }
 @media (min-width: $tablet-width){
   .mobile,
   .desktop{
+    fill: #fff;
     display: none;
   }
   .tablet{
@@ -133,10 +162,8 @@ background-size: 470px, cover ;
 
 
   }
-  .container--top{
-    &::after{
-      height: 100px;
-    }
+  .addition{
+    height: 100px;
   }
   .container--info{
 
@@ -148,7 +175,16 @@ background-size: 470px, cover ;
   }
   .info__title{
   display: block;
+  font-weight: normal;
+
+
   text-align: center;
+
+  h2{
+    font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  }
 }
 .info__download{
   padding-bottom: 110px;
@@ -176,7 +212,7 @@ background-size: 470px, cover ;
   padding-bottom: 21px;
     position: static;
     margin-left: 170px;
-    width: 100%;
+    width: 100vw;
     background-color: inherit;
 
   }
