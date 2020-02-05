@@ -24,5 +24,10 @@
     padding: 0 130px;
   }
 }
-
+.none{
+  display: none;
+}
 @import "blocks/header.scss";
+@import "blocks/advantages.scss";
+@import "blocks/review.scss";
+@import "blocks/price.scss";

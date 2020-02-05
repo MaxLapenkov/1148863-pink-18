@@ -30,3 +30,35 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.slider__toggles{
+  display: flex;
+  justify-content: center;
+
+}
+.slider__toggle{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    background-color: #bec2c7;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus{
+      background-color: #7e868f;
+    }
+
+}
+.toggle--active{
+  border-color: black;
+}

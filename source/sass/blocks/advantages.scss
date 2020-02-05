@@ -1,0 +1,153 @@
+.advantages{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-top: 45px;
+
+  background: url("../img/Shape_2.png") no-repeat 50% 40px;
+background-size:  cover;
+&__heading{
+
+    color: $main-color;
+    font-weight:  300;
+    margin: 0;
+    padding: 0;
+  }
+}
+.price__switcher{
+  display: none;
+}
+.container--advantages{
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.advantages--img{
+  background:url("../img/iphone_3.png") no-repeat 50% 40px;
+  background-size: cover;
+  width: 157px;
+  height: 320px;
+  &.img2{
+    background:url("../img/iphone_2.png") no-repeat 50% 40px;
+  background-size: cover;
+  }
+  &.img1{
+    background:url("../img/iphone_1.png") no-repeat 50% 40px;
+  background-size: cover;
+  }
+}
+.advantages__list{
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+
+
+
+
+}
+.advantages__item{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+@media (min-width: $tablet-width){
+.advantages__heading{
+  font-size: 40px;
+}
+  .advantages__list{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+
+    padding-bottom: 0;
+    text-align: left;
+    order: 2;
+  }
+  .container--advantages{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .advantages--img{
+    align-self: flex-end;
+    width: 270px;
+  height: 510px;
+  }
+  .advantages__effect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &--img{
+      width: 298px;
+      height: 345px;
+
+    }
+    &--info{
+      width: auto;
+      text-align: left;
+      margin-left: 70px;
+      h3{
+        margin: 0;
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+      a{
+        text-decoration: underline;
+        color: $pink-color;
+      }
+    }
+  }
+}
+@media (min-width: $desktop-width){
+  .advantages{
+    &__heading{
+      display: block;
+      font-size: 50px;
+    }
+  }
+  .advantages__list{
+
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .advantages__item{
+    width: 320px;
+  }
+  .advantages__images{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  .advantages--img{
+    display: block;
+    align-self: auto;
+    width: 157px;
+  height: 320px;
+  }
+  .container--advantages{
+    flex-direction: column;
+  }
+  .advantages__effect{
+    background-color: #f2f2f2;
+  }
+}
