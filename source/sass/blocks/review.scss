@@ -43,10 +43,12 @@ margin-bottom: 30px;
   }
 }
 @media (min-width: $desktop-width){
-
+  .review__toggles{
+    display: none;
+  }
   .desktop__toggle{
 
-    display: none;
+    display: block;
     position: absolute;
     top: 40px;
     width: 60px;

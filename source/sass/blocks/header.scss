@@ -1,12 +1,12 @@
 .page-header{
   position: relative;
   background-color: $main-color;
-  background: url(../img/hand.png) no-repeat  0 30%,
- url(../img/back-mobile@1x.jpg) no-repeat 0 0 ;
+  background: url(../img/hand.png) no-repeat  0 175px,
+ url(../img/bg-back-mobile@2x.jpg) no-repeat 0 0 ;
+  color: white;
 
-
-background-size: 100%, 100% ;
-
+background-size: 100%, cover ;
+  margin-bottom: 45px;
 
 }
 
@@ -155,7 +155,7 @@ cursor: pointer;
   .page-header{
 
   background: url(../img/hand.png) no-repeat  50% 120%,
- url(../img/back-mobile@1x.jpg) no-repeat  50% 50%;
+ url(../img/bg-back-tablet@2x.jpg) no-repeat  0 0;
 
 
 background-size: 470px, cover ;
@@ -195,6 +195,16 @@ background-size: 470px, cover ;
 }
 
 @media (min-width: $desktop-width){
+  .page-header{
+
+    background: url(../img/hand.png) no-repeat  50% 120%,
+   url(../img/bg-back-desktop@2x.jpg) no-repeat  0 0;
+
+
+  background-size: 470px, cover ;
+
+
+    }
   .mobile,
   .tablet
   {
