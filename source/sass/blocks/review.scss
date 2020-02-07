@@ -1,53 +1,48 @@
-.slider{
+.slider {
   position: relative;
 }
-.desktop__toggle{
+.desktop__toggle {
   display: none;
 }
-.review{
+.review {
   color: black;
   padding-top: 50px;
-
 }
-.item--flex{
+.item--flex {
   display: flex;
   flex-direction: column;
 }
-.review__title{
-margin: 0;
+.review__title {
+  margin: 0;
 }
-.review__description{
+.review__description {
   display: none;
   margin-top: 20px;
 }
-.review__message{
-margin-top: 30px;
-margin-bottom: 30px;
+.review__message {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.review__list{
-
+.review__list {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
   text-align: center;
-
 }
 
-
-@media (min-width: $tablet-width){
-  .review__message{
+@media (min-width: $tablet-width) {
+  .review__message {
     order: -1;
   }
-  .review__description{
+  .review__description {
     display: block;
   }
 }
-@media (min-width: $desktop-width){
-  .review__toggles{
+@media (min-width: $desktop-width) {
+  .review__toggles {
     display: none;
   }
-  .desktop__toggle{
-
+  .desktop__toggle {
     display: block;
     position: absolute;
     top: 40px;
@@ -63,19 +58,19 @@ margin-bottom: 30px;
     outline: none;
     cursor: pointer;
     z-index: 1;
-    &--prev{
+    &--prev {
       left: 0;
       top: 50px;
     }
-    &--next{
+    &--next {
       right: 0;
       top: 50px;
     }
   }
-  .active{
+  .active {
     display: block;
   }
-  .review{
+  .review {
     padding-top: 200px;
     background-image: url(../img/quotes.svg);
     background-size: 80px 63px;

@@ -1,19 +1,18 @@
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 35px;
 }
-.academy{
+.academy {
   display: flex;
   align-items: center;
-
 }
-.footer__social{
+.footer__social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  &--item{
+  &--item {
     display: block;
     width: 52px;
     height: 51px;
@@ -23,23 +22,22 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     &:hover,
-    &:active{
+    &:active {
       border-color: #b5b9be;
     }
   }
 }
-.item__twitter{
+.item__twitter {
   background-image: url(../img/twitter.png);
 }
-.item__facebook{
+.item__facebook {
   background-image: url(../img/facebook.png);
 }
-.item__youtube{
+.item__youtube {
   background-image: url(../img/youtube.png);
 }
-@media(max-width: $max-mobile-width)
-{
-  .footer{
+@media (max-width: $max-mobile-width) {
+  .footer {
     display: none;
   }
 }

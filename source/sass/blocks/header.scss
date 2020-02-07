@@ -1,42 +1,38 @@
-.page-header{
+.page-header {
   position: relative;
   background-color: $main-color;
-  background: url(../img/hand.png) no-repeat  0 175px,
- url(../img/bg-back-mobile@2x.jpg) no-repeat 0 0 ;
   color: white;
-
-background-size: 100%, cover ;
+  background: url(../img/hand.png) no-repeat 0 175px,
+    url(../img/bg-back-mobile@1x.jpg) no-repeat 0 0;
+  background-size: 100%, cover;
   margin-bottom: 45px;
-
 }
 
-.addition{
+.addition {
   position: absolute;
   content: "";
   width: 100%;
   height: 70px;
   background-color: $darker-color-header;
 }
-.darkerbg{
+.darkerbg {
   background-color: $main-color;
 }
-.page-header__wrapper{
+.page-header__wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
-
-
 }
-.page-header__logo{
-  &:hover{
-  svg{
-    path{
-      fill: $pink-color;
+.page-header__logo {
+  &:hover {
+    svg {
+      path {
+        fill: $pink-color;
+      }
     }
   }
 }
-}
-.logo-wrapper{
+.logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,9 +40,8 @@ background-size: 100%, cover ;
   padding-top: 21px;
   padding-bottom: 21px;
   z-index: 10;
-
 }
-.toggle{
+.toggle {
   display: block;
   cursor: pointer;
   width: 50px;
@@ -56,15 +51,15 @@ background-size: 100%, cover ;
   padding: 0;
   margin: 0;
   outline: none;
-  &:hover{
-    svg{
-      path{
+  &:hover {
+    svg {
+      path {
         fill: $pink-color;
       }
     }
   }
 }
-.main-nav{
+.main-nav {
   z-index: 10;
   position: absolute;
   display: flex;
@@ -73,58 +68,56 @@ background-size: 100%, cover ;
   top: 65px;
   margin-left: -20px;
   background-color: $main-color;
-  &__list{
+  &__list {
     padding: 0;
     margin: 0;
   }
 }
-.site-list{
-  a{
+.site-list {
+  a {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    &:hover{
+    &:hover {
       color: $pink-color;
     }
-    }
-  &__item{
+  }
+  &__item {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     list-style-type: none;
     border-bottom: 1px solid black;
     border-top: 1px solid #485461;
-
-
   }
 }
 .tablet,
-.desktop{
+.desktop {
   display: none;
 }
-.container--info{
-  margin-top: 350px;
+.container--info {
+  margin-top: 120%;
   background-color: $darker-color;
 }
-.info__download{
+.info__download {
   padding-top: 28px;
   padding-bottom: 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .logos{
+  .logos {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     margin-top: 40px;
     margin-bottom: 30px;
   }
-  &--description{
+  &--description {
     text-align: center;
   }
 }
-.button{
-cursor: pointer;
+.button {
+  cursor: pointer;
   border: 4px solid white;
   background-color: transparent;
   color: white;
@@ -132,111 +125,120 @@ cursor: pointer;
   padding: 20px 0;
   border-radius: 30px;
   font-weight: bold;
-  &:hover{
+  &:hover {
     background-color: white;
     color: $pink-color;
   }
 }
-.info__title{
+.info__title {
   display: none;
 }
-.none{
+.none {
   display: none;
 }
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .mobile,
-  .desktop{
+  .desktop {
     fill: #fff;
     display: none;
   }
-  .tablet{
+  .tablet {
     display: block;
   }
-  .page-header{
+  .page-header {
+    background: url(../img/hand.png) no-repeat 50% 120%,
+      url(../img/bg-back-tablet@1x.jpg) no-repeat 0 0;
 
-  background: url(../img/hand.png) no-repeat  50% 120%,
- url(../img/bg-back-tablet@2x.jpg) no-repeat  0 0;
-
-
-background-size: 470px, cover ;
-
-
+    background-size: 470px, cover;
   }
-  .addition{
+  .addition {
     height: 100px;
   }
-  .container--info{
-
+  .container--info {
     margin-top: 100px;
     background-color: inherit;
   }
-  .info__wrapper{
+  .info__wrapper {
     width: 300px;
   }
-  .info__title{
-  display: block;
-  font-weight: normal;
+  .info__title {
+    display: block;
+    font-weight: normal;
 
+    text-align: center;
 
-  text-align: center;
-
-  h2{
-    font-size: 40px;
-  line-height: 48px;
-  font-weight: 300;
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 300;
+    }
+  }
+  .info__download {
+    padding-bottom: 110px;
+  }
+  .main-nav {
+    top: 100px;
   }
 }
-.info__download{
-  padding-bottom: 110px;
-}
-.main-nav{
-  top: 100px;
-}
-}
 
-@media (min-width: $desktop-width){
-  .page-header{
+@media (min-width: $desktop-width) {
+  .page-header {
+    background: url(../img/hand.png) no-repeat 50% 120%,
+      url(../img/bg-back-desktop@1x.jpg) no-repeat 0 0;
 
-    background: url(../img/hand.png) no-repeat  50% 120%,
-   url(../img/bg-back-desktop@2x.jpg) no-repeat  0 0;
-
-
-  background-size: 470px, cover ;
-
-
-    }
+    background-size: 470px, cover;
+  }
   .mobile,
-  .tablet
-  {
+  .tablet {
     display: none;
   }
-  .desktop{
+  .desktop {
     display: block;
   }
-  .page-header__wrapper{
+  .page-header__wrapper {
     flex-direction: row;
   }
-  .main-nav{
+  .main-nav {
     display: flex;
     padding-top: 21px;
-  padding-bottom: 21px;
+    padding-bottom: 21px;
     position: static;
     margin-left: 170px;
     width: 100vw;
     background-color: inherit;
-
   }
-  .site-list{
+  .site-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    &__item{
+    &__item {
       border: none;
     }
   }
-  .toggle{
+  .toggle {
     display: none;
   }
 }
+@media (min-resoluion: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background: url(../img/hand.png) no-repeat 0 175px,
+      url(../img/bg-back-mobile@2x.jpg) no-repeat 0 0;
+    background-size: 100%, cover;
+  }
+  @media (min-width: $tablet-width) {
+    .page-header {
+      background: url(../img/hand.png) no-repeat 50% 120%,
+        url(../img/bg-back-tablet@2x.jpg) no-repeat 0 0;
 
+      background-size: 470px, cover;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    .page-header {
+      background: url(../img/hand.png) no-repeat 50% 120%,
+        url(../img/bg-back-desktop@2x.jpg) no-repeat 0 0;
+      background-size: 470px, cover;
+    }
+  }
+}
