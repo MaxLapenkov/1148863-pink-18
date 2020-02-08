@@ -58,14 +58,14 @@ gulp.task("compress", function() {
 gulp.task("sprite", function() {
   return gulp
     .src("source/img/*.svg")
-    .pipe(gulp.dest("build/img"))
+
     .pipe(
       svgstore({
         inlineSvg: true
       })
     )
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function() {
