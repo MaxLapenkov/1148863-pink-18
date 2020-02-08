@@ -25,16 +25,16 @@
   align-items: center;
 }
 .advantages--img {
-  background: url("../img/iphone_3.png") no-repeat 50% 40px;
+  background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat 50% 0;
   background-size: cover;
-  width: 157px;
+  width: 200px;
   height: 320px;
   &.img2 {
-    background: url("../img/iphone_2.png") no-repeat 50% 40px;
+    background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat 50% 0;
     background-size: cover;
   }
   &.img1 {
-    background: url("../img/iphone_1.png") no-repeat 50% 40px;
+    background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat 50% 0;
     background-size: cover;
   }
 }
@@ -71,7 +71,7 @@
   }
   .advantages--img {
     align-self: flex-end;
-    width: 270px;
+    width: 320px;
     height: 510px;
   }
   .advantages__effect {
@@ -137,7 +137,7 @@
   .advantages--img {
     display: block;
     align-self: auto;
-    width: 157px;
+    width: 200px;
     height: 320px;
   }
   .container--advantages {
